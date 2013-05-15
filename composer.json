@@ -1,0 +1,24 @@
+{
+    "name": "killerwolf/jcdodatawrapper",
+    "version": "0.1",
+    "type": "library",
+    "description"; "PHP class wrapper to query JCDECAUX/VLS Open Data Rest API",
+    "homepage":"https://github.com/killerwolf/JCDODataWrapper",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "suggest": {
+        "lib-curl": "Query the API with curl instead of php regular fopen function"
+    },
+    "authors": [
+        {
+            "name": "Hamdi LAADHARI",
+            "email": "killerwolf06@gmail.com",
+            "homepage": "http://www.h4md1.fr",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {"JCDodatawrapper": "src/"}
+    }
+}
