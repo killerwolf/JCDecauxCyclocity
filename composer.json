@@ -2,7 +2,7 @@
     "name": "killerwolf/jcdodatawrapper",
     "version": "0.1",
     "type": "library",
-    "description"; "PHP class wrapper to query JCDECAUX/VLS Open Data Rest API",
+    "description": "PHP class wrapper to query JCDECAUX/VLS Open Data Rest API",
     "homepage":"https://github.com/killerwolf/JCDODataWrapper",
     "require": {
         "php": ">=5.3.0"
