@@ -4,7 +4,18 @@ JCDODataWrapper
 A standalone PHP wrapper to access all JCDecaux bike sharing sytem RealTime Data
 
 ## Installation ##
+
+#### Regular download ####
 Just download the JCDODataWrapper class from GitHub, load it into your app, as you usually do (regular include, or any autoload system your project use)
+
+#### Using composer ####
+As you usualy do
+    {
+        "require": {
+            "killerwolf/jcdodatawrapper": "1.0.*"
+        }
+    }
+
 
 ## Example usage ##
 
@@ -14,7 +25,7 @@ Just download the JCDODataWrapper class from GitHub, load it into your app, as y
     include "JCDODataWrapper.class.php";
     
     //instanciate with your ApiKey provided when you registred by developer.jcdecaux.com
-    $VLSWrapper = new JCDODataWrapper( '<youApiKey>' );
+    $VLSWrapper = new JCDodatawrapper\Vls\Wrapper( '<youApiKey>' );
     
     //dumping all contracts (all cities that JCDECAUX rules on)
     var_dump( $VLSWrapper->getContracts() );
