@@ -10,7 +10,7 @@ As you usualy do
     
     {
         "require": {
-            "killerwolf/jcdodatawrapper": "dev-master"
+            "killerwolf/jcdodatawrapper": "0.*"
         }
     }
 
@@ -27,6 +27,11 @@ Just download the 'Wrapper' class from GitHub, load it into your app, as you usu
     //instanciate with your ApiKey provided when you registred by developer.jcdecaux.com
     $VLSWrapper = new JCDodatawrapper\Vls\Wrapper( '<youApiKey>' );
     
+    //using curl to handle the requesting thing
+    //you can set your own request method by implementing the HTTPClientInterface
+    $HTTPClient = new JCDodatawrapper\Vls\HTTPClientCurl();
+    $VLSWrapper->setHTTPClient( $HTTPClient );
+
     //dumping all contracts (all cities that JCDECAUX rules on)
     var_dump( $VLSWrapper->getContracts() );
     
