@@ -6,6 +6,9 @@
     "require": {
         "php": ">=5.3.0"
     },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "1.*"
+    },
     "suggest": {
         "lib-curl": "Query the API with curl instead of php regular fopen function"
     },
