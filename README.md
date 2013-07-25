@@ -10,7 +10,7 @@ As you usualy do
     
     {
         "require": {
-            "killerwolf/jcdodatawrapper": "dev-master"
+            "killerwolf/jcdodatawrapper": "0.*"
         }
     }
 
