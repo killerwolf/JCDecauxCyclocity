@@ -8,7 +8,7 @@
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "1.*",
-        "phpmd/phpmd": "1.5.*
+        "phpmd/phpmd": "1.5.*"
     },
     "suggest": {
         "lib-curl": "Query the API with curl instead of php regular fopen function"
