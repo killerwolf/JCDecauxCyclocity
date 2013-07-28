@@ -6,4 +6,5 @@ php:
 before_script: composer install
 
 script: 
-  - ./vendor/bin/phpcs -h
+  - php -d date.timezone=Europe/Paris ./vendor/bin/phpmd src
+  - php -d date.timezone=Europe/Paris ./vendor/bin/phpmd src text codesize,unusedcode,naming,design,controversial
