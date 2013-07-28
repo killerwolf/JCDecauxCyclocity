@@ -1,4 +1,4 @@
-JCDODataWrapper
+JCDODataWrapper [![Build Status](https://travis-ci.org/killerwolf/JCDODataWrapper.png?branch=develop)](https://travis-ci.org/killerwolf/JCDODataWrapper)
 ===============
 
 A standalone PHP wrapper to access all JCDecaux bike sharing sytem RealTime Data
