@@ -1,4 +1,4 @@
-JCDODataWrapper
+JCDODataWrapper [![Build Status](https://travis-ci.org/killerwolf/JCDODataWrapper.png?branch=develop)](https://travis-ci.org/killerwolf/JCDODataWrapper)
 ===============
 
 A standalone PHP wrapper to access all JCDecaux bike sharing sytem RealTime Data
@@ -20,6 +20,7 @@ Just download the 'Wrapper' class from GitHub, load it into your app, as you usu
 
 ## Example usage ##
 
+```php
     <?php
     
     require "vendor/autoload.php"; //composer autoloading
@@ -40,3 +41,4 @@ Just download the 'Wrapper' class from GitHub, load it into your app, as you usu
     
     //dumping a station data of a particular contract (city)
     var_dump( $VLSWrapper->getStation('Rouen', 15 ) );
+```
