@@ -26,9 +26,9 @@ class Wrapper
         return $this->apiKey;
     }
     
-    public function getStationsByContract($contract_name)
+    public function getStationsByContract($contractName)
     {
-        return $this->query(sprintf($this->operations[3]['query'], $contract_name, $this->apiKey));
+        return $this->query(sprintf($this->operations[3]['query'], $contractName, $this->apiKey));
     }
     
     public function getContracts()
@@ -37,9 +37,9 @@ class Wrapper
         return $this->query($url);
     }
     
-    public function getStation($contract_name, $station_id)
+    public function getStation($contractName, $stationId)
     {
-        return $this->query(printf($this->operations[2]['query'], $station_id, $contract_name, $this->apiKey));
+        return $this->query(printf($this->operations[2]['query'], $stationId, $contractName, $this->apiKey));
     }
     
     public function setHTTPClient($client)

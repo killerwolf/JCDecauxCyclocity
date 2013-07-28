@@ -8,10 +8,10 @@ class HTTPClientCurl implements Interfaces\HTTPClientInterface
         //$url = self::API_ENDPOINT . $url;
         // First try CURL
         if (extension_loaded('curl')) {
-            $ch = curl_init($url);
+            $cch = curl_init($url);
             // Options used to perform in a similar way than PHP's fopen()
             curl_setopt_array(
-                $ch,
+                $cch,
                 array(
                     CURLOPT_FOLLOWLOCATION => true,
                     CURLOPT_SSL_VERIFYPEER => false
@@ -20,13 +20,13 @@ class HTTPClientCurl implements Interfaces\HTTPClientInterface
 
             // Getting data
             ob_start();
-            if (!curl_exec($ch)) {
-                curl_close($ch);
+            if (!curl_exec($cch)) {
+                curl_close($cch);
                 ob_end_clean();
                 return false;
             }
 
-            curl_close($ch);
+            curl_close($cch);
             $data = ob_get_contents();
             ob_end_clean();
 
