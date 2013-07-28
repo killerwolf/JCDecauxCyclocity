@@ -20,7 +20,7 @@ Just download the 'Wrapper' class from GitHub, load it into your app, as you usu
 
 ## Example usage ##
 
-    ```php
+```php
     <?php
     
     require "vendor/autoload.php"; //composer autoloading
@@ -41,4 +41,4 @@ Just download the 'Wrapper' class from GitHub, load it into your app, as you usu
     
     //dumping a station data of a particular contract (city)
     var_dump( $VLSWrapper->getStation('Rouen', 15 ) );
-    ```
+```
