@@ -1,9 +1,10 @@
 <?php
 namespace JCDodatawrapper\Vls;
 
-class Wrapper{
+class Wrapper
+{
     const API_ENDPOINT = "https://api.jcdecaux.com/vls/v1/";
-    private $operations = array( 
+    private $operations = array(
             0 => array( "query" => "contracts?apiKey=%s" ),
             1 => array( "query" => "stations?apiKey=%s" ),
             2 => array( "query" => "stations/%d?contract=%s&apiKey=%s" ),
@@ -11,11 +12,11 @@ class Wrapper{
     );
     private $apiKey = false;
     
-    function __construct( $apiKey )
+    public function __construct($apiKey)
     {
         $this->apiKey = $apiKey;
     }
-    public function setApiKey( $key )
+    public function setApiKey($key)
     {
         $this->apiKey = $key;
     }
@@ -25,28 +26,28 @@ class Wrapper{
         return $this->apiKey;
     }
     
-    public function getStationsByContract( $contract_name )
+    public function getStationsByContract($contract_name)
     {
-        return $this->_query( sprintf( $this->operations[3]['query'], $contract_name, $this->apiKey ) );
+        return $this->query(sprintf($this->operations[3]['query'], $contract_name, $this->apiKey));
     }
     
     public function getContracts()
     {
-        $url = sprintf( $this->operations[0]['query'], $this->apiKey );
-        return $this->_query( $url );
+        $url = sprintf($this->operations[0]['query'], $this->apiKey);
+        return $this->query($url);
     }
     
-    public function getStation( $contract_name, $station_id )
+    public function getStation($contract_name, $station_id)
     {
-        return $this->_query( sprintf( $this->operations[2]['query'],$station_id, $contract_name , $this->apiKey ) );
+        return $this->query(printf($this->operations[2]['query'], $station_id, $contract_name, $this->apiKey));
     }
     
-    public function setHTTPClient( $client )
+    public function setHTTPClient($client)
     {
         $this->HTTPClient = $client;
     }
-    private function _query( $url )
+    private function query($url)
     {
-        return $this->HTTPClient->get( self::API_ENDPOINT . $url );
+        return $this->HTTPClient->get(self::API_ENDPOINT.$url);
     }
 }
