@@ -39,7 +39,7 @@ class Wrapper
     
     public function getStation($contractName, $stationId)
     {
-        return $this->query(printf($this->operations[2]['query'], $stationId, $contractName, $this->apiKey));
+        return $this->query(sprintf($this->operations[2]['query'], $stationId, $contractName, $this->apiKey));
     }
     
     public function setHTTPClient($client)
