@@ -1,6 +1,6 @@
 <?php
 
-namespace Killerwolf\JCDecauxCyclocityBundle;
+namespace H4md1\JCDecauxCyclocityBundle;
 
 class Wrapper
 {

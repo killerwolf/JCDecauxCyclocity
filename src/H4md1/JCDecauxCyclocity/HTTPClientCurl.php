@@ -1,8 +1,8 @@
 <?php
 
-namespace Killerwolf\JCDecauxCyclocityBundle;
+namespace H4md1\JCDecauxCyclocityBundle;
 
-use Killerwolf\JCDecauxCyclocityBundle\Interfaces\HTTPClientInterface;
+use H4md1\JCDecauxCyclocityBundle\Interfaces\HTTPClientInterface;
 
 class HTTPClientCurl implements HTTPClientInterface
 {

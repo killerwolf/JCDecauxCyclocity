@@ -1,6 +1,6 @@
 <?php
 
-namespace Killerwolf\JCDecauxCyclocityBundle\Interfaces;
+namespace H4md1\JCDecauxCyclocityBundle\Interfaces;
 
 interface HTTPClientInterface
 {
