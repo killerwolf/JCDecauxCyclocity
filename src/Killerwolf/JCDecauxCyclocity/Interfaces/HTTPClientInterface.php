@@ -1,5 +1,6 @@
 <?php
-namespace JCDodatawrapper\Vls\Interfaces;
+
+namespace Killerwolf\JCDecauxCyclocityBundle\Interfaces;
 
 interface HTTPClientInterface
 {
