@@ -1,7 +1,10 @@
 <?php
-namespace JCDodatawrapper\Vls;
 
-class HTTPClientCurl implements Interfaces\HTTPClientInterface
+namespace H4md1\JCDecauxCyclocityBundle;
+
+use H4md1\JCDecauxCyclocityBundle\Interfaces\HTTPClientInterface;
+
+class HTTPClientCurl implements HTTPClientInterface
 {
     public function get($url)
     {

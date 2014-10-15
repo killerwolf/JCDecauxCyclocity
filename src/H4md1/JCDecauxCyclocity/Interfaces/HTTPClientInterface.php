@@ -1,5 +1,6 @@
 <?php
-namespace JCDodatawrapper\Vls\Interfaces;
+
+namespace H4md1\JCDecauxCyclocityBundle\Interfaces;
 
 interface HTTPClientInterface
 {

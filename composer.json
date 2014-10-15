@@ -1,5 +1,5 @@
 {
-    "name": "killerwolf/jcdodatawrapper",
+    "name": "h4md1/jcdecaux-cyclocity",
     "type": "library",
     "description": "PHP class wrapper to query JCDECAUX/VLS Open Data Rest API",
     "homepage":"https://github.com/killerwolf/JCDODataWrapper",
@@ -22,6 +22,6 @@
         }
     ],
     "autoload": {
-        "psr-0": {"JCDodatawrapper": "src/"}
+        "psr-0": {"H4md1": "src/"}
     }
 }
