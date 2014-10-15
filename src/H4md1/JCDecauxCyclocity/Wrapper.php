@@ -1,5 +1,6 @@
 <?php
-namespace JCDodatawrapper\Vls;
+
+namespace H4md1\JCDecauxCyclocityBundle;
 
 class Wrapper
 {
