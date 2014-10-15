@@ -1,6 +1,6 @@
 <?php
 
-namespace H4md1\JCDecauxCyclocityBundle\Interfaces;
+namespace H4md1\JCDecauxCyclocity\Interfaces;
 
 interface HTTPClientInterface
 {
