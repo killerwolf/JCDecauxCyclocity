@@ -1,6 +1,6 @@
 <?php
 
-namespace H4md1\JCDecauxCyclocityBundle;
+namespace H4md1\JCDecauxCyclocity;
 
 class Wrapper
 {

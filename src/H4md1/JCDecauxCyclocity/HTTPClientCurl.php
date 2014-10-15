@@ -1,8 +1,8 @@
 <?php
 
-namespace H4md1\JCDecauxCyclocityBundle;
+namespace H4md1\JCDecauxCyclocity;
 
-use H4md1\JCDecauxCyclocityBundle\Interfaces\HTTPClientInterface;
+use H4md1\JCDecauxCyclocity\Interfaces\HTTPClientInterface;
 
 class HTTPClientCurl implements HTTPClientInterface
 {
